@@ -5,7 +5,7 @@
     "scripts": {
         "start": "ui5 serve",
         "build": "ui5 build",
-        "wdi5": "node ./node_modules/@wdio/cli/bin/wdio.js wdio run wdio.conf.js"
+        "wdi5": "node C:\\Users\\vvuckovi\\node_modules\\@wdio\\cli\\bin\\wdio.js run wdio.conf.js"
     },
     "dependencies": {
         "@ui5/cli": "^3.3.1"

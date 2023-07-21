@@ -7,6 +7,8 @@ const selector = {
 
 describe("Input", async () => {
     it("should read text from field", async () => {
-        console.log("proradilo.")
+        const input = await browser.asControl(selector)
+        const value = await (input).getValue()
+        expect(value).toEqual("Test Radi")
     })
 })

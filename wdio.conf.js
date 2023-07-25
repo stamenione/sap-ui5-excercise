@@ -65,16 +65,7 @@ exports.config = {
             // 5 instances get started at a time.
             maxInstances: 5,
             //
-            browserName: "chrome",
-            "goog:chromeOptions": {
-                args:
-                    process.argv.indexOf("--headless") > -1
-                        ? ["--headless"]
-                        : process.argv.indexOf("--debug") > -1
-                        ? ["window-size=1440,800", "--auto-open-devtools-for-tabs"]
-                        : ["window-size=1440,800"]
-            },
-            acceptInsecureCerts: true
+            browserName: "chrome"
             // If outputDir is provided WebdriverIO can capture driver session logs
             // it is possible to configure which logTypes to include/exclude.
             // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -130,6 +121,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ["chromedriver", "ui5"],
+    //change the chromedriver - to use browser stack by typeing ["browserstack",{browserstackLocal:true}]
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

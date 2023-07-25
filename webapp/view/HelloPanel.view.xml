@@ -22,6 +22,7 @@
          press=".onShowHello"
          class="myCustomButton"/>
       <Input
+         id="inputText"
          value="{/recipient/name}"
          valueLiveUpdate="true"
          width="60%"/>
